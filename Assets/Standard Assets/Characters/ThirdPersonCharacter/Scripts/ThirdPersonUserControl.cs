@@ -13,7 +13,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
-        
+        public bool IsMoving => m_Move != Vector3.zero;
         private void Start()
         {
             // get the transform of the main camera
