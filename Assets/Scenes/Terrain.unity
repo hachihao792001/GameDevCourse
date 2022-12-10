@@ -5247,7 +5247,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 1
+  m_RenderAlignment: 2
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
@@ -5398,7 +5398,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.01
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5889,14 +5889,14 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 10
+    type: 4
     angle: 0
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -6550,10 +6550,10 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 8867
-        atime2: 56090
+        atime1: 14649
+        atime2: 45489
         atime3: 64571
-        atime4: 65535
+        atime4: 64571
         atime5: 0
         atime6: 0
         atime7: 0
@@ -9975,13 +9975,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402568654}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 160.3104, y: 100.042, z: 369.93048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_Father: {fileID: 1916759079}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1402568658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9991,13 +9991,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402568654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6943b6dc6a8826b4aa5da019419d5aca, type: 3}
+  m_Script: {fileID: 11500000, guid: d7f7213590e4aad43b8c58fbd1238016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 1916759079}
-  _offset: {x: 0, y: 0, z: 0}
-  _ignorePos: 000100
-  _ignoreRot: 010101
+  _player: {fileID: 1916759079}
+  _groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  _distanceToGround: 0.02
 --- !u!1 &1473169034
 GameObject:
   m_ObjectHideFlags: 0
@@ -15032,7 +15033,7 @@ GameObject:
   - component: {fileID: 1934083023}
   - component: {fileID: 1934083022}
   - component: {fileID: 1934083021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15175,7 +15176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610458018571377614, guid: bf99799119792044ab4db278b5fbab2a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6610458018571377614, guid: bf99799119792044ab4db278b5fbab2a, type: 3}
       propertyPath: m_LocalPosition.x
